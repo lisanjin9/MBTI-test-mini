@@ -1,0 +1,68 @@
+{
+  "MBTI_Types": [
+    {
+      "type": "ISTJ",
+      "description": "The Inspector"
+    },
+    {
+      "type": "ISFJ",
+      "description": "The Defender"
+    },
+    {
+      "type": "INFJ",
+      "description": "The Advocate"
+    },
+    {
+      "type": "INTJ",
+      "description": "The Architect"
+    },
+    {
+      "type": "ISTP",
+      "description": "The Craftsman"
+    },
+    {
+      "type": "ISFP",
+      "description": "The Artist"
+    },
+    {
+      "type": "INFP",
+      "description": "The Mediator"
+    },
+    {
+      "type": "INTP",
+      "description": "The Thinker"
+    },
+    {
+      "type": "ESTP",
+      "description": "The Persuader"
+    },
+    {
+      "type": "ESFP",
+      "description": "The Entertainer"
+    },
+    {
+      "type": "ENFP",
+      "description": "The Campaigner"
+    },
+    {
+      "type": "ENTP",
+      "description": "The Debater"
+    },
+    {
+      "type": "ESTJ",
+      "description": "The Supervisor"
+    },
+    {
+      "type": "ESFJ",
+      "description": "The Provider"
+    },
+    {
+      "type": "ENFJ",
+      "description": "The Mentor"
+    },
+    {
+      "type": "ENTJ",
+      "description": "The Commander"
+    }
+  ]
+}

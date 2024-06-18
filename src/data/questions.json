@@ -1,0 +1,84 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "当你遇到一个新问题时，你更倾向于：",
+      "options": [
+        { "label": "A. 立即尝试解决它，边做边想。", "value": "P" },
+        { "label": "B. 先思考所有可能的解决方案，然后再行动。", "value": "J" }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "在社交聚会中，你通常：",
+      "options": [
+        { "label": "A. 与许多人交流，喜欢成为注意力的焦点。", "value": "E" },
+        { "label": "B. 与少数人深入交谈，宁愿不是焦点。", "value": "I" }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "在做出重要决定时，你更依赖于：",
+      "options": [
+        { "label": "A. 逻辑和推理。", "value": "T" },
+        { "label": "B. 个人感受和价值观。", "value": "F" }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "你通常更喜欢哪种类型的书籍或电影？",
+      "options": [
+        { "label": "A. 那些包含丰富想象和抽象概念的。", "value": "N" },
+        { "label": "B. 那些基于现实生活，详细具体的。", "value": "S" }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "在工作中，你更倾向于：",
+      "options": [
+        { "label": "A. 严格遵守计划和安排。", "value": "J" },
+        { "label": "B. 保持灵活性，随时准备适应变化。", "value": "P" }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "当处理信息时，你通常：",
+      "options": [
+        { "label": "A. 关注细节，重视实际应用。", "value": "S" },
+        { "label": "B. 关注整体趋势，重视潜在可能。", "value": "N" }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "在团队中，你通常扮演的角色是：",
+      "options": [
+        { "label": "A. 提供支持和鼓励他人。", "value": "F" },
+        { "label": "B. 提出批评和客观分析。", "value": "T" }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "你更喜欢哪种类型的假期？",
+      "options": [
+        { "label": "A. 安排紧凑，活动丰富的假期。", "value": "J" },
+        { "label": "B. 没有计划，随心所欲的假期。", "value": "P" }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "在面对压力时，你更可能：",
+      "options": [
+        { "label": "A. 保持冷静，分析情况。", "value": "T" },
+        { "label": "B. 表达情感，寻求他人的支持。", "value": "F" }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "在日常生活中，你更倾向于：",
+      "options": [
+        { "label": "A. 尝试新事物，寻求刺激。", "value": "E" },
+        { "label": "B. 保持熟悉的环境和习惯。", "value": "I" }
+      ]
+    }
+  ]
+}
