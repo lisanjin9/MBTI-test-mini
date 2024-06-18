@@ -18,5 +18,3 @@ class App extends Component<PropsWithChildren>  {
 
 export default App
 
-
-// 25：25  第二期2视频
