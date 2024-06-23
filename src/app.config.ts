@@ -1,6 +1,6 @@
 export default defineAppConfig({
   // pages: ["pages/onQuestions/index","pages/index/index"],
-  pages: ["pages/index/index"],
+  pages: ["pages/doQuestion/index" , "pages/index/index" ],
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#fff",
