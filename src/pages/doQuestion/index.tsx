@@ -1,17 +1,18 @@
 import { View } from "@tarojs/components";
 import "taro-ui/dist/style/components/button.scss"; // 按需引入
+import Taro from "@tarojs/taro";
 import { AtButton, AtRadio } from "taro-ui";
 import { useEffect, useState } from "react";
-import "./index.scss";
 import GlobalFooter from "../../components/GlobalFooter";
-import question from "../../data/questions.json";
+import questions from "../../data/questions.json";
+import "./index.scss";
 
 export default () => {
-  const questions = question[0];
+  // const questions = question[0];
   const [current, setcurrent] = useState<number>(1);
 
   // 根据上一题 下一题修改题目以及选项
-  const [currentQuestion, setCurrentQuestion] = useState(question[0]);
+  const [currentQuestion, setCurrentQuestion] = useState<Question>(questions[0]);
   const questionOption = currentQuestion.options.map((option) => {
     return { label: `${option.key}.${option.value}`, value: option.key }; // return { label: option.key + "、" + option.value, value: option.key };
   });
@@ -22,20 +23,18 @@ export default () => {
   // 存储用户答案
   const [answerList] = useState<String[]>([]);
 
-
   // 钩子函数，通过监视 current 参数是否发生变化， 发生变化后调用 setCurrentQuestion 函数，更新当前题目
   useEffect(() => {
     //更新题目以及选项
-    setCurrentQuestion(question[current - 1]);
+    setCurrentQuestion(questions[current - 1]);
     // 更新用户答案存入list中
     setCurrentAnswer(answerList[current - 1]);
   }, [current]);
 
   return (
     <View className="quPage">
-      {/*{JSON.stringify(answerList)}*/}
       <View className="qu-oneTitle">
-        {current}、{questions.title}
+        {current}、{currentQuestion.title}
       </View>
       <view className="options-wrapper">
         <AtRadio
@@ -47,7 +46,7 @@ export default () => {
           value={currentAnswer}
         />
       </view>
-      {current < question.length && (
+      {current < questions.length && (
         <AtButton
           className="qu-primary"
           type="primary"
@@ -58,8 +57,18 @@ export default () => {
           下一题
         </AtButton>
       )}
-      {current == question.length && (
-        <AtButton className="qu-primary" type="primary" circle>
+      {current == questions.length && (
+        <AtButton
+          className="qu-primary"
+          type="primary"
+          circle
+          onClick={() => {
+            Taro.navigateTo({
+              url: "/pages/result/index",
+            });
+            Taro.setStorageSync("answerList", answerList);
+          }}
+        >
           查看结果
         </AtButton>
       )}
